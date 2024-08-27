@@ -1,0 +1,22 @@
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20vh;
+}
+
+.listBox {
+  max-height: 30vh;
+  overflow: hidden;
+}
+.listBox:hover {
+  overflow-y: scroll;
+}
+
+.addItem {
+  margin-top: 4.5rem;
+  height: 15rem;
+}
+
+@media screen and (max-width: 414px) {
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom style -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <title>test</title>
+  </head>
+  <body>
+    <main class="">
+      <div class="container">
+        <!-- add categrioes  -->
+        <div class="form-group group mb-3 p-3 m-2">
+          <h3 class="h1">Add Categories</h3>
+          <input
+            id="text"
+            class="form-control m-1 w-75"
+            type="text"
+            placeholder="Name of Categorie" />
+          <button id="add-task-btn" class="btn btn-outline-primary">Add</button>
+        </div>
+
+        <!-- list for Categroies -->
+        <div class="row listBox">
+          <table class="table">
+            <tbody id="listBox"></tbody>
+          </table>
+        </div>
+
+        <!-- add && delete && updata Item -->
+        <div class="addItem" id="add-task">
+          <div class="item row">
+            <div class="input-group col-sm-5">
+              <input
+                type="text"
+                class="form-control m-2"
+                placeholder=" Item"
+                id="name" />
+            </div>
+            <div class="input-group col-sm-5">
+              <input
+                type="number"
+                class="form-control m-2"
+                placeholder="Price $"
+                id="price" />
+            </div>
+            <div class="input-group col-sm-5">
+              <input
+                type="text"
+                class="form-control m-2"
+                placeholder="discrption"
+                id="discraption" />
+            </div>
+            <div class="input-group col-sm-5">
+              <div class="m-2">
+                <!-- <button class="btn btn-outline-primary">Eidte</button> -->
+                <button
+                  class="btn btn-outline-success"
+                  id="btn-save"
+                  onclick="addItemSave()">
+                  Save
+                </button>
+                <button class="btn btn-outline-danger" onclick="clearItem()">
+                  Delete
+                </button>
+                <!-- <button class="btn btn-outline-warning" onclick="showItem()">
+                  Show
+                </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./Script/Storge.js"></script>
+  </body>
+</html>
